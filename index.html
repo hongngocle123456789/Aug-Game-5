@@ -845,11 +845,11 @@ let timerInterval = null;
 
 // 3X LARGER PLAYER CHARACTER
 let player = {
-    x: 280,
-    y: 320,
-    width: 240,
-    height: 270,
-    speed: 10
+    x: 375,
+    y: 540,
+    width: 50,
+    height: 37.5,
+    speed: 8
 };
 
 let fallingObjects = [];
@@ -1078,10 +1078,10 @@ function update() {
 
         // Accurate Bounding Box Collision
         if (
-            obj.x < player.x + player.width - 25 &&
-            obj.x + obj.size > player.x + 25 &&
-            obj.y < player.y + player.height - 15 &&
-            obj.y + obj.size > player.y + 30
+            obj.x < player.x + player.width - 5 &&
+            obj.x + obj.size > player.x + 5 &&
+            obj.y < player.y + player.height - 5 &&
+            obj.y + obj.size > player.y + 5
         ) {
             const item = ITEM_TYPES[obj.key];
             if (item.accepted) {
