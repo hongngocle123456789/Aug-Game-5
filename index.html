@@ -403,6 +403,61 @@
             flex-grow: 1;
         }
 
+        /* --- INDIVIDUAL ITEM SIZE OVERRIDES --- */
+
+/* 1. Plastic Bag (Usually small/thin -> Make bigger) */
+.guide-card img[src*="plastic-bag"] {
+    width: 95px;
+    height: 95px;
+}
+
+/* 2. Plastic Wrapper */
+.guide-card img[src*="plastic-wrapper"] {
+    width: 85px;
+    height: 85px;
+}
+
+/* 3. Plastic Bottle (Tall item -> Narrower/taller) */
+.guide-card img[src*="plastic-bottle"] {
+    width: 65px;
+    height: 95px;
+}
+
+/* 4. Electric Device Wires (Wide item -> Wider) */
+.guide-card img[src*="electric-device-wires"] {
+    width: 90px;
+    height: 90px;
+}
+
+/* 5. Dirty Plastic Bottle */
+.guide-card img[src*="dirty-plastic"] {
+    width: 60px;
+    height: 90px;
+}
+
+/* 6. Battery (Small item -> Make bigger) */
+.guide-card img[src*="battery"] {
+    width: 85px;
+    height: 85px;
+}
+
+/* 7. Carton */
+.guide-card img[src*="carton"] {
+    width: 80px;
+    height: 80px;
+}
+
+/* 8. Metal Can */
+.guide-card img[src*="metal"] {
+    width: 70px;
+    height: 85px;
+}
+
+/* 9. Styrofoam Box */
+.guide-card img[src*="styrofoam"] {
+    width: 85px;
+    height: 85px;
+}
         .guide-card span {
             font-size: 12px;       /* Slightly larger text to match the bigger cards */
             font-weight: 800;
