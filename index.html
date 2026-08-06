@@ -845,11 +845,11 @@ let timerInterval = null;
 
 // 3X LARGER PLAYER CHARACTER
 let player = {
-    x: 375,
-    y: 540,
-    width: 50,
-    height: 37.5,
-    speed: 8
+    x: 360,
+    y: 490,
+    width: 80,
+    height: 90,
+    speed: 9
 };
 
 let fallingObjects = [];
@@ -1023,7 +1023,7 @@ function spawnObject() {
     const randomKey = keys[Math.floor(Math.random() * keys.length)];
     
     // 2X LARGER FALLING OBJECTS
-    const size = 100;
+    const size = 50;
     fallingObjects.push({
         key: randomKey,
         x: Math.random() * (canvas.width - size),
@@ -1078,10 +1078,10 @@ function update() {
 
         // Accurate Bounding Box Collision
         if (
-            obj.x < player.x + player.width - 5 &&
-            obj.x + obj.size > player.x + 5 &&
-            obj.y < player.y + player.height - 5 &&
-            obj.y + obj.size > player.y + 5
+            obj.x < player.x + player.width - 10 &&
+            obj.x + obj.size > player.x + 10 &&
+            obj.y < player.y + player.height - 10 &&
+            obj.y + obj.size > player.y + 10
         ) {
             const item = ITEM_TYPES[obj.key];
             if (item.accepted) {
